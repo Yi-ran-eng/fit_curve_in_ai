@@ -5,6 +5,7 @@ of course that is complex, and ,to be honest, this model function is not really 
 * ${z_{0}=9.7e-3}$
 * ${L_{eff}=1.3912e-4}$
 * ${I_{0}=5e13}$
+
 these numbers have remarkable differences, and it's not allowed to make a scale mapping about the input datas,what you need to do is to find the property ${\alpha_{NL}}$ in this function.
 
 for me , i use one mapping mean to split integrals into discrete sums, it may be the best way to handle integrations of infinite intervals like this.Then ,you can choose to use the optimizing way enbedded in torch or compute it by yourself,in my experiments i finished it in the last way. for more about these, i computed a function that allows you to run it to get a subclass of one parent class in your code,you can freely create what you want in individual function that defined by yourself and pass it into the subclass.I think this way boosts the flexibility of nn.Module's subclass.
